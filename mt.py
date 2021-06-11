@@ -116,11 +116,11 @@ frm1 = App(title=" جابر ابن حیان ",height="430",width = '500')
 #---------------Reports
 options_box = Box(frm1, height="fill", align="right",border=True)
 content_box = Box(frm1, align="top", width="fill", border=True)
-Text(options_box, text="گزارش گیری")
+Text(options_box, text="گزارش گیری",font = 'B Titr', size = '11',color = 'blue')
 
 
 content_box = Box(frm1, align="left", width="fill", border=True)
-Text(content_box, text="پیام سفارشی", color = 'red')
+Text(content_box, text="پیام سفارشی", font = 'B Titr', size = '11',color = '#992255')
 custom_message_textbox = TextBox(content_box,height=5,width=30, multiline = True,text = "text")
 PushButton(content_box, command = fn_build_custom_message, text="   ساخت پیام متنی ", width = '12')
 
@@ -137,7 +137,7 @@ PushButton(options_box, command=fn_find_count, text="  جستجو  ")
 
 #-------------Main Buttons
 
-Text(frm1, text="عملیات فایل")
+Text(frm1, text="عملیات فایل",font = 'B Titr', size = '11',color = 'green')
 PushButton(frm1, command=get_folder, text="مسیر فایلها", width = '12')
 PushButton(frm1,command=fn_test, text="     ادغام     ", width = '12')
 
