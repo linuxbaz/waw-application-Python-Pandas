@@ -3,7 +3,7 @@ import numpy as np
 import jinja2
 
 
-
+#convert miladi to shamsi
 def gregorian_to_jalali(gy, gm, gd):
  g_d_m = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]
  if (gm > 2):

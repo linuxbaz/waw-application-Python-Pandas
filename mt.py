@@ -12,7 +12,7 @@ Msg_file_empty = 0
 cf = -1
 
 
-def get_folder(): # and_rename_xlsx_files
+def get_folder(): # and_rename_xlsx_files simple
    global absent_path
    absent_path = frm1.select_folder()
    files = os.listdir(absent_path)
@@ -23,7 +23,7 @@ def get_folder(): # and_rename_xlsx_files
       cf += 1
       os.rename(os.path.join(absent_path, file), os.path.join(absent_path, ''.join([str(index), '.xlsx'])))
 
-   
+
 
 
 #create object from MergFind class and call methods
